@@ -39,7 +39,7 @@ SENTINEL = namedtuple('Sentinel', [])()
 _PRED_TEMPLATES = {10582: 10583,  # v2.1
                    9968: 9969,    # v2.0
                    9112: 9113,    # v1.1
-                   8387: 9113,    # v1.0
+                   8387: 8388,    # v1.0
                    7020: 7021,    # v0.5
                    11219: 11220,  # v2.2
                    11221: 11220,  # v2.2 registration
@@ -47,6 +47,20 @@ _PRED_TEMPLATES = {10582: 10583,  # v2.1
 _CIVISML_TEMPLATE = None  # CivisML training template to use
 REGISTRATION_TEMPLATES = [11221,  # v2.2
                           ]
+
+TEMPLATE_ALIASES = {24: 'civis-civisml-training-v2-2',
+                    25: 'civis-civisml-prediction-v2-2',
+                    26: 'civis-civisml-registration-v2-2',
+                    27: 'civis-civisml-training-v0-5',
+                    28: 'civis-civisml-prediction-v0-5',
+                    29: 'civis-civisml-training-v1-0',
+                    30: 'civis-civisml-prediction-v1-0',
+                    31: 'civis-civisml-training-v1-1',
+                    32: 'civis-civisml-prediction-v1-1',
+                    33: 'civis-civisml-training-v2-0',
+                    34: 'civis-civisml-prediction-v2-0',
+                    35: 'civis-civisml-training-v2-1',
+                    36: 'civis-civisml-prediction-v2-1'}
 
 
 class ModelError(RuntimeError):
